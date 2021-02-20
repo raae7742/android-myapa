@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_m_backarrow"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="40.5dp"
+                    android:layout_marginLeft="17dp"
+                    app:srcCompat="@drawable/bw_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_m_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34.875dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#2699FB"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="프로필" />
+
+
+                <ImageView
+                    android:id="@+id/iv_m_profile"
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="86.625dp"
+                    android:layout_marginLeft="25dp"
+                    tools:srcCompat="@drawable/m_profile" />
+
+                <TextView
+                    android:id="@+id/tv_m_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="101.25dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="사용자"
+                    android:textSize="23sp"
+                    android:textColor="#2699FB"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_m_nim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginTop="106.25dp"
+                    android:textSize="18sp"
+                    android:textColor="#2699FB"
+                    android:textStyle="bold"
+                    android:text="님"/>
+
+                <ImageView
+                    android:id="@+id/iv_m_smallprofile"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="342dp"
+                    android:layout_marginLeft="41dp"
+                    app:srcCompat="@drawable/mf_profile" />
+
+                <TextView
+                    android:id="@+id/tv_m_surname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="351dp"
+                    android:layout_marginLeft="96.75dp"
+                    android:text="Name Surname"
+                    android:textStyle="bold"
+                    android:textColor="#2699FB"
+                    android:textSize="15.75dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_m_dot"
+                    android:layout_width="16.875dp"
+                    android:layout_height="3.375dp"
+                    android:layout_marginTop="331.875dp"
+                    android:layout_marginLeft="360dp"
+                    app:srcCompat="@drawable/m_dot" />
+
+                <TextView
+                    android:id="@+id/tv_m_chat"
+                    android:layout_width="331.875dp"
+                    android:layout_height="76.5dp"
+                    android:layout_marginTop="405dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor #incididunt ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat."
+                    android:textSize="15.75dp"
+                    android:textColor="#2699FB"/>
+
+                <ImageView
+                    android:id="@+id/iv_m_background"
+                    android:layout_width="331.875dp"
+                    android:layout_height="146.25dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="507.375dp"
+                    app:srcCompat="@drawable/mf_bg2" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bn_wp_navigation1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="675dp"
+        android:background="#2699FB"
+        app:itemIconTint="@drawable/menu_selector_color"
+        app:itemTextColor="@drawable/menu_selector_color"
+        app:menu="@menu/menu_bottom" />
+
+</RelativeLayout>

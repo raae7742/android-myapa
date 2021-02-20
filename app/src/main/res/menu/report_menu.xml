@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 리포트화면의 오른쪽 상단바 메뉴 -->
+    <item
+        android:id="@+id/menu_calendar"
+        android:title="calendar"
+        android:icon="@drawable/item_report_menu"
+        app:showAsAction="always"/>
+
+</menu>

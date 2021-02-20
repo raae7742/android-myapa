@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="40dp"
+    tools:context=".fragment.FindPwFragment">
+
+    <!-- 이름 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@id/ev_name"
+        android:text="이름"
+        android:textColor="#2699FB"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <!-- 사용자 이름 입력창 -->
+    <EditText
+        android:id="@+id/ev_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:inputType="textPersonName"
+        android:hint="홍길동"
+        android:textColorHint="#2699FB"
+        android:backgroundTint="#2699FB"
+        android:gravity="right"/>
+
+    <!-- 이메일 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@id/ev_email"
+        android:text="이메일"
+        android:textColor="#2699FB"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <!-- 사용자 이메일 입력창 -->
+    <EditText
+        android:id="@+id/ev_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:inputType="textEmailAddress"
+        android:hint="hong_pill@mail.com"
+        android:textColorHint="#2699FB"
+        android:backgroundTint="#2699FB"
+        android:gravity="right"/>
+
+    <!-- 구분선 -->
+    <ImageView
+        android:id="@+id/iv_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="157dp"
+        android:background="@drawable/iv_divider"/>
+
+    <!-- 사용자 휴대전화번호 입력창 -->
+    <EditText
+        android:id="@+id/ev_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="211dp"
+        android:layout_toLeftOf="@+id/btn_send_certificationNumber"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="10dp"
+        android:inputType="phone"
+        android:hint="휴대번호전화 입력('-'제외)"
+        android:textColorHint="#2699FB"
+        android:backgroundTint="#2699FB"/>
+
+    <!-- 인증번호 전송 버튼 -->
+    <ImageButton
+        android:id="@+id/btn_send_certificationNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="211dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_find_pw_blue"/>
+
+    <!-- 전송 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="227dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="43dp"
+        android:text="전송"
+        android:textColor="#FFFFFF" />
+
+    <!-- 인증번호 입력창 -->
+    <EditText
+        android:id="@+id/ev_certificationNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="274dp"
+        android:layout_toLeftOf="@+id/btn_identify_certificationNumber"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="10dp"
+        android:inputType="number"
+        android:hint="인증번호 입력"
+        android:textColorHint="#2699FB"
+        android:backgroundTint="#2699FB"/>
+
+    <!-- 인증번호 확인 버튼 -->
+    <ImageButton
+        android:id="@+id/btn_identify_certificationNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="274dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_find_pw_white"/>
+
+    <!-- 확인 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="43dp"
+        android:text="확인"
+        android:textColor="#2699FB" />
+
+    <!-- 완료 버튼 -->
+    <ImageButton
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/btn_blue"/>
+
+    <!-- 완료 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="85dp"
+        android:text="완료"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

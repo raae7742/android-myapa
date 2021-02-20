@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 배경 이미지 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iv_report_item"/>
+
+    <!-- 종 모양 이미지 -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/iv_report_item_icon"/>
+
+    <!-- 약 이름 -->
+    <TextView
+        android:id="@+id/tv_medicine_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="68dp"
+        android:text="올로파놀 점안액"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#2699FB"/>
+
+    <!-- 약 복용 시간 -->
+    <TextView
+        android:id="@+id/tv_medicine_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/tv_medicine_name"
+        android:layout_marginRight="68dp"
+        android:text="오전 8:00"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="#2699FB"/>
+
+    <!-- 약 복용 체크 버튼 -->
+    <CheckBox
+        android:id="@+id/rbtn_check"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:button="@null"
+        android:background="@drawable/selector_report_rbtn"/>
+
+</RelativeLayout>

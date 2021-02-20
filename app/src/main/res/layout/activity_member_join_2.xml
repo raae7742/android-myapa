@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_mj2_backarrow"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="42.75dp"
+        android:layout_marginLeft="24.75dp"
+        app:srcCompat="@drawable/bw_arrow" />
+
+    <ImageView
+        android:id="@+id/iv_mj2_logo"
+        android:layout_width="210.375dp"
+        android:layout_height="73.125dp"
+        android:layout_marginTop="16.875dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/iv_mj2_backaround"
+        android:layout_width="match_parent"
+        android:layout_height="369dp"
+        android:layout_marginTop="102.375dp"
+        app:srcCompat="@drawable/bg_mj_2" />
+
+    <TextView
+        android:id="@+id/tv_mj2_birth"
+        android:layout_width="67.5dp"
+        android:layout_height="22.5dp"
+        android:layout_marginTop="141.75dp"
+        android:layout_marginLeft="61dp"
+        android:textSize="16.875sp"
+        android:textColor="#0089FE"
+        android:textStyle="bold"
+        android:text="생년월일" />
+
+    <Spinner
+        android:id="@+id/spinner_mj2_birth"
+        android:layout_width="313.875dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="168.75dp"
+        android:layout_marginLeft="43dp"
+        android:background="@drawable/spinner_border"/>
+
+    <TextView
+        android:id="@+id/tv_mj2_area"
+        android:layout_width="67.5dp"
+        android:layout_height="22.5dp"
+        android:layout_marginTop="238.5dp"
+        android:layout_marginLeft="61dp"
+        android:textSize="16.875sp"
+        android:textColor="#0089FE"
+        android:textStyle="bold"
+        android:text="거주지역" />
+
+    <Spinner
+        android:id="@+id/spinner_mj2_area"
+        android:layout_width="313.875dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="265.5dp"
+        android:layout_marginLeft="43dp"
+        android:background="@drawable/spinner_border"/>
+
+    <TextView
+        android:id="@+id/tv_mj2_state"
+        android:layout_width="67.5dp"
+        android:layout_height="22.5dp"
+        android:layout_marginTop="335.25dp"
+        android:layout_marginLeft="61dp"
+        android:textSize="16.875sp"
+        android:textColor="#0089FE"
+        android:textStyle="bold"
+        android:text="(          )" />
+
+    <Spinner
+        android:id="@+id/spinner_mj2_state"
+        android:layout_width="313.875dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="362.25dp"
+        android:layout_marginLeft="43dp"
+        android:background="@drawable/spinner_border"/>
+
+    <EditText
+        android:id="@+id/et_mj2_phonenumber"
+        android:layout_width="202.75dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="505.25dp"
+        android:layout_marginLeft="33dp"
+        android:textSize="11.25sp"
+        android:textColor="#2699FB"
+        android:textColorHint="#2699FB"
+        android:hint="휴대번호전화 입력('-'제외)" />
+
+    <Button
+        android:id="@+id/btn_mj2_send"
+        android:layout_width="108dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="249dp"
+        android:textSize="13.5sp"
+        android:textStyle="bold"
+        android:backgroundTint="#2699FB"
+        android:text="전송" />
+
+    <EditText
+        android:id="@+id/et_mj2_cnumber"
+        android:layout_width="202.75dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="576.125dp"
+        android:layout_marginLeft="33dp"
+        android:textSize="11.25sp"
+        android:textColor="#2699FB"
+        android:textColorHint="#2699FB"
+        android:hint="인증번호 입력" />
+
+    <Button
+        android:id="@+id/btn_mj2_cnumber"
+        android:layout_width="108dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="570.875dp"
+        android:layout_marginLeft="249dp"
+        android:textSize="13.5sp"
+        android:textStyle="bold"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#2699FB"
+        android:text="확인" />
+
+    <ImageButton
+        android:id="@+id/btn_mj2_next"
+        android:layout_width="331.875dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="648.875dp"
+        android:layout_marginLeft="41dp"
+        android:textSize="20.25sp"
+        android:background="@drawable/mj_btn" />
+
+    <TextView
+        android:id="@+id/tv_mj2_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="665.75dp"
+        android:text="다음"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="15.75sp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="40dp"
+    tools:context=".fragment.FindIdFragment">
+
+    <!-- 이름 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@id/ev_name"
+        android:text="이름"
+        android:textColor="#2699FB"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <!-- 사용자 이름 입력창 -->
+    <EditText
+        android:id="@+id/ev_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:inputType="textPersonName"
+        android:hint="홍길동"
+        android:textColorHint="#2699FB"
+        android:backgroundTint="#2699FB"
+        android:gravity="right"/>
+
+    <!-- 이메일 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@id/ev_email"
+        android:text="이메일"
+        android:textColor="#2699FB"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <!-- 사용자 이메일 입력창 -->
+    <EditText
+        android:id="@+id/ev_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:inputType="textEmailAddress"
+        android:hint="hong_pill@mail.com"
+        android:textColorHint="#2699FB"
+        android:backgroundTint="#2699FB"
+        android:gravity="right"/>
+
+    <!-- 완료 버튼 -->
+    <ImageButton
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/btn_blue"/>
+
+    <!-- 완료 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="85dp"
+        android:text="완료"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

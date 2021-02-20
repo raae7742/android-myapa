@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 사이드바 메뉴 -->
+    <!-- 데일리 리포트 -->
+    <item
+        android:id="@+id/item_daily_report"
+        android:title="데일리 리포트" />
+
+    <!-- 쇼핑 -->
+    <item
+        android:id="@+id/item_shopping"
+        android:title="쇼핑" />
+
+    <!-- 계정 설정 -->
+    <item
+        android:id="@+id/item_setting"
+        android:title="계정 설정" />
+
+    <!-- 고객센터 -->
+    <item
+        android:id="@+id/item_question"
+        android:title="문의하기" />
+
+</menu>

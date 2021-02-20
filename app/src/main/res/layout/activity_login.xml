@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <!-- 상단바 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/LoginToolbarTheme" />
+
+    <!-- 어플명 -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo_white" />
+
+    <!-- 아이디 입력창 이미지 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="269dp"
+        android:background="@drawable/et_login" />
+
+    <!-- 아이디 입력창 -->
+    <EditText
+        android:id="@+id/ev_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="285dp"
+        android:hint="아이디"
+        android:textColorHint="#2699FB"
+        android:background="@null"/>
+
+    <!-- 비밀번호 입력창 이미지 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="339dp"
+        android:background="@drawable/et_login" />
+
+    <!-- 비밀번호 입력창 -->
+    <EditText
+        android:id="@+id/ev_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="355dp"
+        android:hint="●●●●●●●"
+        android:textColorHint="#2699FB"
+        android:background="@null"/>
+
+    <!-- 자동 로그인 여부 -->
+    <CheckBox
+        android:id="@+id/cb_autologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="412dp"
+        android:background="#00FFFFFF"
+        android:button="@drawable/cb_autologin"
+        android:text="로그인 상태 유지"
+        android:textColor="@color/white"
+        app:buttonTint="@color/white" />
+
+    <!-- 아이디/비밀번호 찾기 화면으로 이동 -->
+    <TextView
+        android:id="@+id/tv_findIdAndPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/cb_autologin"
+        android:text="아이디/비밀번호 찾기"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"/>
+
+    <!-- 로그인 버튼 -->
+    <ImageButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="452dp"
+        android:background="@drawable/btn_blue" />
+
+    <!-- 로그인 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="472dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- 회원가입 버튼 -->
+    <ImageButton
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="515dp"
+        android:background="@drawable/btn_white" />
+
+    <!-- 회원가입 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="536dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

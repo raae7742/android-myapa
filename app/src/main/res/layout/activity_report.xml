@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ReportActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="복약 리포트"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- 추가된 약 리스트 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_above="@+id/btn_add_medicine"
+        android:layout_marginBottom="30dp" />
+
+    <!-- 약 추가하기 버튼 -->
+    <ImageButton
+        android:id="@+id/btn_add_medicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_report" />
+
+    <!-- 약 추가하기 텍스트 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:text="약 추가하기"
+        android:textSize="15sp"
+        android:textColor="#2699FB"/>
+
+</RelativeLayout>

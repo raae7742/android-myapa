@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- 검색어 입력창 이미지 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_search" />
+
+    <!-- 검색어 입력창 -->
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:hint="검색어를 입력하세요"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColor="#2699FB"
+        android:textColorHint="#2699FB"
+        android:background="@null"/>
+
+    <!-- 검색 아이콘 -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/iv_search_icon"/>
+
+    <!-- 검색 전 화면과 검색 후 화면 출력 부분 -->
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"/>
+
+</RelativeLayout>

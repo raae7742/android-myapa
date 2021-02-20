@@ -1,0 +1,6 @@
+21.01.02 initial log by Jaey
+
+[폴더 구조 설명]
+activity : Front-End 화면 부분
+
+21.01.02 lombok 적용

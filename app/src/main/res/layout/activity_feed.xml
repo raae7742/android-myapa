@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FeedActivity">
+
+    <!-- 상단바 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarTheme">
+
+        <!-- 상단바 타이틀 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="피드"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- 피드 내용 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_above="@+id/iv_feed_divider3">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp">
+
+            <!-- 글을 작성한 사용자의 프로필 사진 -->
+            <ImageView
+                android:id="@+id/iv_feed_user_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/iv_feed_profile"/>
+
+            <!-- 글을 작성한 사용자명 -->
+            <TextView
+                android:id="@+id/tv_feed_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="55dp"
+                android:text="사용자 명"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#2699FB"/>
+
+            <!-- 글이 작성된 시간 -->
+            <TextView
+                android:id="@+id/tv_feed_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_alignParentRight="true"
+                android:text="1시간 전"
+                android:textSize="10sp"
+                android:textColor="#2699FB"/>
+
+            <!-- 피드 구분선1 -->
+            <ImageView
+                android:id="@+id/iv_feed_divider1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="62dp"
+                android:background="@drawable/iv_feed_divider"/>
+
+            <!-- 글의 내용 -->
+            <TextView
+                android:id="@+id/tv_feed_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_feed_divider1"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="제가 효과본 운동을 추천합니다.\n단, 절대 과하게 하지 마세요!"
+                android:textSize="14sp"
+                android:textColor="#2699FB"/>
+
+            <!-- 글의 첨부된 이미지 리스트 -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_feed_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:dividerHeight="0px"
+                android:divider="#FFFFFF"/>
+
+            <!-- 글의 해시태그 -->
+            <TextView
+                android:id="@+id/tv_feed_hashtag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_image"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="4dp"
+                android:text="#허리 #건강 #디스크"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#2699FB"/>
+
+            <!-- 공감 아이콘 -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_feed_hashtag"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="12dp"
+                app:srcCompat="@drawable/iv_feed_like"/>
+
+            <!-- 공감 수 -->
+            <TextView
+                android:id="@+id/tv_feed_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_feed_hashtag"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="36dp"
+                android:text="609"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#2699FB"/>
+
+            <!-- 댓글 아이콘 -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_feed_hashtag"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="91dp"
+                app:srcCompat="@drawable/iv_feed_scrap"/>
+
+            <!-- 글에 달린 댓글의 수 -->
+            <TextView
+                android:id="@+id/tv_feed_comment_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_feed_hashtag"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="115dp"
+                android:text="120"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#2699FB"/>
+
+            <!-- 스크랩 -->
+            <TextView
+                android:id="@+id/tv_scrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_feed_hashtag"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:text="SHARE"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#2699FB"/>
+
+            <!-- 피드 구분선2 -->
+            <ImageView
+                android:id="@+id/iv_feed_divider2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_scrap"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/iv_feed_divider"/>
+
+            <!-- 글에 달린 댓글 리스트 -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_feed_divider2" />
+
+       </RelativeLayout>
+
+    </ScrollView>
+
+    <!--피드 구분선3 -->
+    <ImageView
+        android:id="@+id/iv_feed_divider3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/iv_feed_divider"/>
+
+    <!-- 댓글 입력창 이미지 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/btn_register_comment"
+        android:background="@drawable/et_feed_input_comment"/>
+
+    <!-- 댓글 입력창 -->
+    <EditText
+        android:id="@+id/et_input_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_toLeftOf="@+id/btn_register_comment"
+        android:hint="댓글 입력"
+        android:background="@null"/>
+
+    <!-- 댓글 등록 버튼 -->
+    <ImageButton
+        android:id="@+id/btn_register_comment"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_feed"/>
+
+    <!-- 등록 텍스트 -->
+    <TextView
+        android:id="@+id/tv_medicine_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="15dp"
+        android:text="등록"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

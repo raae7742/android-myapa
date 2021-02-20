@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/abc_vector_test" />
+
+                <TextView
+                    android:id="@+id/tv_h1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Create an Account"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_h2"
+                    android:layout_width="309dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="90dp"
+                    android:text="Lorem dolor sit amet consectetur adipisicing elit, sed do."
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="성명"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <EditText
+                    android:id="@+id/ev_name"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="홍길동"
+                    android:textSize="20dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이메일"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <EditText
+                    android:id="@+id/ev_email"
+                    android:layout_height="wrap_content"
+                    android:layout_width="330dp"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20dp"
+                    android:hint="johndoe@mail.com"
+                    android:layout_marginTop="260dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이디"
+                    android:layout_marginTop="330dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <EditText
+                    android:id="@+id/ev_id"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="happy_hong"
+                    android:layout_marginTop="350dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호"
+                    android:layout_marginTop="420dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <EditText
+                    android:id="@+id/ev_password"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="440dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="닉네임"
+                    android:layout_marginTop="510dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <EditText
+                    android:id="@+id/ev_nickname"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:hint="건강8779"
+                    android:layout_marginTop="530dp"
+                    android:layout_marginLeft="40dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_h3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Personal Information"
+                    android:layout_marginTop="40dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/tv_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="생년월일"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_birth"
+                    android:layout_width="330dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:id="@+id/tv_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="거주지역"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_local"
+                    android:layout_width="330dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="210dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:layout_marginTop="280dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_state"
+                    android:layout_width="330dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:text="다음"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="360dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
