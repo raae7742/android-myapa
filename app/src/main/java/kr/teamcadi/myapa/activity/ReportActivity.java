@@ -10,13 +10,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
 import kr.teamcadi.myapa.R;
-import kr.teamcadi.myapa.adapter.NotificationAdapter;
 import kr.teamcadi.myapa.adapter.ReportAdapter;
-import kr.teamcadi.myapa.domain.Notification;
 import kr.teamcadi.myapa.domain.Report;
 
 // 화면 설명 : 복약 리포트 화면 -> 사이드바의 데일리 리포트와 연결
@@ -26,6 +26,7 @@ public class ReportActivity extends AppCompatActivity {
     RecyclerView rv_report; // 복약리포트 리사이클러뷰
     ReportAdapter adapter; // 복약리포트 어댑터
     ArrayList<Report> medicineList = new ArrayList<>(); // 복약해야할 약 리스트
+    ImageButton btn_add_medicine; // 약 추가하기 버튼
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,12 +42,22 @@ public class ReportActivity extends AppCompatActivity {
         init(); // 임시 데이터 추가
 
         rv_report = findViewById(R.id.rv_report);
+        btn_add_medicine = findViewById(R.id.btn_add_medicine);
 
         rv_report.setLayoutManager(new LinearLayoutManager(this)); // 리사이클러뷰와 레이아웃 매니저 연결
 
         adapter = new ReportAdapter(medicineList); // 어댑터와 복약해야할 약 리스트 연결
         rv_report.setAdapter(adapter); // 리사이클러뷰와 어댑터 연결
         adapter.notifyDataSetChanged(); // 어댑터에게 데이터 변화를 알려줌
+
+        // 약 추가하기 버튼 클릭시 -> 약 추가하기 화면(ReportAddActivity)로 이동
+        btn_add_medicine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ReportActivity.this, ReportAddActivity.class));
+            }
+        });
+
     }
 
     // 상단바 오른쪽 메뉴

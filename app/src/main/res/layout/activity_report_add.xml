@@ -4,62 +4,57 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:id="@+id/iv_r3_arrow"
-        app:srcCompat="@drawable/bw_arrow"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="28.125dp" />
+    <!-- 상단바 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarTheme">
 
-    <TextView
-        android:id="@+id/tv_r3_title"
-        android:layout_width="94.5dp"
-        android:layout_height="23.625dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25.875dp"
-        android:text="약 추가하기"
-        android:textColor="#2699FB"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        <!-- 상단바 타이틀 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="약 추가하기"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
 
-    <ImageView
-        android:id="@+id/iv_r3_trashbutton"
-        app:srcCompat="@drawable/r3_trash"
-        android:layout_width="18dp"
-        android:layout_height="22.5dp"
-        android:layout_marginLeft="371.25dp"
-        android:layout_marginTop="29.25dp" />
+    </androidx.appcompat.widget.Toolbar>
 
+    <!-- 약 이름 배경 이미지 -->
     <ImageView
         android:id="@+id/iv_r3_bg"
         app:srcCompat="@drawable/r3_bg"
         android:layout_width="385.875dp"
         android:layout_height="60.75dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="104.625dp" />
+        android:layout_marginTop="93dp" />
 
+    <!-- 약 이름 텍스트 -->
     <TextView
         android:id="@+id/tv_r3_mname"
         android:layout_width="56.25dp"
         android:layout_height="22.5dp"
         android:layout_marginLeft="46dp"
-        android:layout_marginTop="123.75dp"
+        android:layout_marginTop="110dp"
         android:text="약 이름"
         android:textColor="#2699FB"
         android:textSize="16.875sp" />
 
+    <!-- 약 이름 입력창 -->
     <EditText
         android:id="@+id/ev_r3_mname"
         android:layout_width="252dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="107.25dp"
-        android:layout_marginTop="115dp"
+        android:layout_marginTop="100dp"
         android:backgroundTint="#FFFFFF"
         android:paddingLeft="10dp"
         android:textColor="#2699FB"
         android:textSize="15dp" />
 
+    <!-- 주기 텍스트 -->
     <TextView
         android:id="@+id/tv_r3_cycle"
         android:layout_width="wrap_content"
@@ -70,6 +65,28 @@
         android:textColor="#2699FB"
         android:textSize="16.875sp" />
 
+    <!-- 입력된 주기 배경 이미지 -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="182.75dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"
+        android:background="@drawable/iv_report_add_cycle"/>
+
+    <!-- 입력된 주기 -->
+    <TextView
+        android:id="@+id/tv_cycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185.75dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="37dp"
+        android:text="3일"
+        android:textColor="#2699FB"
+        android:textSize="16.875sp" />
+
+    <!-- 기한 텍스트 -->
     <TextView
         android:id="@+id/tv_r3_term"
         android:layout_width="wrap_content"
@@ -80,12 +97,14 @@
         android:textColor="#2699FB"
         android:textSize="16.875sp" />
 
+    <!-- 입력된 기한 -->
     <EditText
         android:id="@+id/ev_r3_term"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="243dp"
         android:layout_marginTop="238.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"
         android:background="@null"
         android:hint="2021년 01월 14일"
         android:inputType="textPersonName"
@@ -93,6 +112,7 @@
         android:textColorHint="#2699FB"
         android:textSize="16.875sp" />
 
+    <!-- 알람반복 텍스트 -->
     <TextView
         android:id="@+id/tv_r3_alarm"
         android:layout_width="wrap_content"
@@ -103,6 +123,28 @@
         android:textColor="#2699FB"
         android:textSize="16.875sp" />
 
+    <!-- 알림추가 버튼 -->
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="286.875dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"
+        android:background="@drawable/btn_report_add_alarm"/>
+
+    <!-- 알림추가 텍스트 -->
+    <TextView
+        android:id="@+id/tv_add_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="289.875dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp"
+        android:text="알림추가"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"/>
+
+    <!-- 시계 이미지 -->
     <ImageView
         android:id="@+id/iv_r3_time1"
         app:srcCompat="@drawable/r3_time"
@@ -111,6 +153,28 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="351dp" />
 
+    <!-- 선택된 시간 텍스트 -->
+    <TextView
+        android:id="@+id/tv_select_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="351dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"
+        android:text="9:00"
+        android:textSize="17sp"
+        android:textColor="#2699FB"/>
+
+    <!-- 구분선 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="381dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/iv_writepage_divider"/>
+
+    <!-- 시계 이미지 -->
     <ImageView
         android:id="@+id/iv_r3_time2"
         app:srcCompat="@drawable/r3_time"
@@ -119,6 +183,28 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="400.5dp" />
 
+    <!-- 선택된 시간 텍스트 -->
+    <TextView
+        android:id="@+id/tv_select_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"
+        android:text="12:00"
+        android:textSize="17sp"
+        android:textColor="#2699FB"/>
+
+    <!-- 구분선 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430.5dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/iv_writepage_divider"/>
+
+    <!-- 완료 버튼 -->
     <ImageButton
         android:id="@+id/btn_r3_done"
         android:layout_width="345.375dp"
@@ -127,6 +213,7 @@
         android:layout_marginTop="489.375dp"
         android:background="@drawable/r3_btn" />
 
+    <!-- 완료 텍스트 -->
     <TextView
         android:id="@+id/tv_r3_done"
         android:layout_width="wrap_content"

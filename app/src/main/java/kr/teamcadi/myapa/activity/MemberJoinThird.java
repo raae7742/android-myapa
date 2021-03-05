@@ -1,4 +1,4 @@
-package kr.teamcadi.myapa;
+package kr.teamcadi.myapa.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import kr.teamcadi.myapa.R;
 
 // 화면 설명 : 회원가입 세부 정보 입력 화면
 // Author : Kim Seung Hyun, Last Modified : 2021.02.18

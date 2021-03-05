@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F9FF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="주기"
+        android:textColor="#2699FB"
+        android:textSize="17dp"/>
+
+    <ImageButton
+        android:id="@+id/ib_exit"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/btn_exit" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/iv_list_divider"/>
+
+    <TextView
+        android:id="@+id/tv_every_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="매일"
+        android:textColor="#2699FB"
+        android:textSize="15dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:background="@drawable/iv_list_divider"/>
+
+    <TextView
+        android:id="@+id/tv_day_of_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="요일마다"
+        android:textColor="#2699FB"
+        android:textSize="15dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="111dp"
+        android:background="@drawable/iv_list_divider"/>
+
+    <TextView
+        android:id="@+id/tv_day_of_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="121dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="일 간격"
+        android:textColor="#2699FB"
+        android:textSize="15dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/iv_list_divider"/>
+
+    <ToggleButton
+        android:id="@+id/btn_day_of_week"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginLeft="380dp"
+        android:background="@drawable/btn_toggle"/>
+
+    <ToggleButton
+        android:id="@+id/btn_day_of_month"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="119dp"
+        android:background="@drawable/btn_toggle" />
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:textColor="#2699FB"
+        android:textSize="15sp"
+        android:layout_marginTop="178dp"
+        android:layout_marginLeft="370dp"/>
+
+</RelativeLayout>

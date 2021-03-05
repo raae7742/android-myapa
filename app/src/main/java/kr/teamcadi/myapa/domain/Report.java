@@ -28,4 +28,12 @@ public class Report {
     public void setChecked(Boolean checked) {
         isChecked = checked;
     }
+
+    public void setMedicine_name(String medicine_name) {
+        this.medicine_name = medicine_name;
+    }
+
+    public void setMedicine_time(String medicine_time) {
+        this.medicine_time = medicine_time;
+    }
 }

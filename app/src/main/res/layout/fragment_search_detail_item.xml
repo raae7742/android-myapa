@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="22dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/btn_options" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/iv_profile_small"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/iv_profile_small" />
+
+        <TextView
+            android:id="@+id/tv_bynickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:text="사용자 명"
+            android:textColor="#2699fb"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="5dp"
+            android:text="1시간 전"
+            android:textColor="#2699fb"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_smallchat"
+        android:layout_width="322dp"
+        android:layout_height="71dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:lineSpacingExtra="4sp"
+        android:text="제가 효과본 운동을 추천합니다.\n단, 절대 과하게 하지 마세요!"
+        android:textColor="#2699fb"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="178dp"
+        android:background="#bce0fd" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/btn_chat"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="0dp"
+            app:srcCompat="@drawable/btn_chat" />
+
+        <TextView
+            android:id="@+id/tv_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="609"
+            android:textColor="#2699fb"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/iv_heart"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="32dp"
+            app:srcCompat="@drawable/btn_heart" />
+
+        <TextView
+            android:id="@+id/tv_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="120"
+            android:textColor="#2699fb"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:text="SHARE"
+            android:textColor="#2699fb"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
