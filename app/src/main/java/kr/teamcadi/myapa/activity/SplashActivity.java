@@ -64,8 +64,7 @@ public class SplashActivity extends AppCompatActivity
         @Override
         public void run()
         {
-            // 로그인 화면으로 이동함
-            Intent gotoLogin = new Intent(SplashActivity.this, MainActivity.class);
+            Intent gotoLogin = new Intent(SplashActivity.this, LoginActivity.class);
             startActivity(gotoLogin);
             finish();
         }

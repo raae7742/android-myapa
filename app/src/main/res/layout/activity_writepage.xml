@@ -52,7 +52,7 @@
                 android:layout_marginTop="17dp"
                 android:layout_marginLeft="100dp"
                 android:layout_marginRight="128dp"
-                android:background="@drawable/spinner_border" />
+                android:background="@drawable/spinner_writepage" />
 
             <!-- 질환태그 텍스트 -->
             <TextView

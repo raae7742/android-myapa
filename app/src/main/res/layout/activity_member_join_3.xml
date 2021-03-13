@@ -4,194 +4,186 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:id="@+id/iv_mj3_backarrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24.75dp"
-        android:layout_marginTop="42.75dp"
-        app:srcCompat="@drawable/bw_arrow" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/iv_mj3_logo"
-        android:layout_width="210.375dp"
-        android:layout_height="73.125dp"
-        android:layout_marginTop="16.875dp"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/logo" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_mj3_sex"
-        android:layout_width="33.75dp"
-        android:layout_height="22.5dp"
-        android:layout_marginTop="112.5dp"
-        android:layout_marginLeft="41dp"
-        android:textSize="16.875sp"
-        android:textColor="#0089FE"
-        android:textStyle="bold"
-        android:text="성별" />
+            <ImageView
+                android:id="@+id/iv_mj3_backarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24.75dp"
+                android:layout_marginTop="42.75dp"
+                app:srcCompat="@drawable/bw_arrow" />
 
-    <Button
-        android:id="@+id/btn_mj3_male"
-        android:layout_width="154.125dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="137.25dp"
-        android:layout_marginLeft="41dp"
-        android:textSize="16.875sp"
-        android:backgroundTint="#2699FB"
-        android:text="남성" />
+            <ImageView
+                android:id="@+id/iv_mj3_logo"
+                android:layout_width="210.375dp"
+                android:layout_height="73.125dp"
+                android:layout_marginTop="16.875dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/tv_mj3_sex"
+                android:layout_width="33.75dp"
+                android:layout_height="22.5dp"
+                android:layout_marginTop="112.5dp"
+                android:layout_marginLeft="41dp"
+                android:textSize="16.875sp"
+                android:textColor="#0089FE"
+                android:textStyle="bold"
+                android:text="성별" />
+
+            <Button
+                android:id="@+id/btn_mj3_male"
+                android:layout_width="154.125dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="137.25dp"
+                android:layout_marginLeft="41dp"
+                android:textSize="16.875sp"
+                android:backgroundTint="#2699FB"
+                android:text="남성" />
 
 
-    <Button
-        android:id="@+id/btn_mj3_female"
-        android:layout_width="163.125dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="137.25dp"
-        android:layout_marginLeft="210dp"
-        android:textSize="16.875sp"
-        android:backgroundTint="#FFFFFF"
-        android:textColor="#2699FB"
-        android:text="여성" />
+            <Button
+                android:id="@+id/btn_mj3_female"
+                android:layout_width="163.125dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="137.25dp"
+                android:layout_marginLeft="210dp"
+                android:textSize="16.875sp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#2699FB"
+                android:text="여성" />
 
-    <TextView
-        android:id="@+id/tv_mj3_height"
-        android:layout_width="16.875dp"
-        android:layout_height="22.5dp"
-        android:layout_marginTop="201.375dp"
-        android:layout_marginLeft="62dp"
-        android:textSize="16.875sp"
-        android:textColor="#0089FE"
-        android:textStyle="bold"
-        android:text="키" />
+            <TextView
+                android:id="@+id/tv_mj3_height"
+                android:layout_width="16.875dp"
+                android:layout_height="22.5dp"
+                android:layout_marginTop="201.375dp"
+                android:layout_marginLeft="62dp"
+                android:textSize="16.875sp"
+                android:textColor="#0089FE"
+                android:textStyle="bold"
+                android:text="키" />
 
-    <EditText
-        android:id="@+id/et_mj3_height"
-        android:layout_width="216dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="228.375dp"
-        android:layout_marginLeft="41dp"
-        android:background="@drawable/border"
-        android:hint="170 cm"
-        android:paddingLeft="22.5dp"
-        android:textColor="#2699FB"
-        android:textColorHint="#2699FB" />
+            <EditText
+                android:id="@+id/et_mj3_height"
+                android:layout_width="216dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="228.375dp"
+                android:layout_marginLeft="41dp"
+                android:background="@drawable/border"
+                android:hint="170 cm"
+                android:paddingLeft="22.5dp"
+                android:textColor="#2699FB"
+                android:textColorHint="#2699FB" />
 
-    <ImageView
-        android:id="@+id/iv_mj3_plus1"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="245.25dp"
-        android:layout_marginLeft="300dp"
-        app:srcCompat="@drawable/plus" />
+            <ImageView
+                android:id="@+id/iv_mj3_plus1"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="245.25dp"
+                android:layout_marginLeft="300dp"
+                app:srcCompat="@drawable/plus" />
 
-    <ImageView
-        android:id="@+id/iv_mj3_minus1"
-        android:layout_width="18dp"
-        android:layout_height="2.25dp"
-        android:layout_marginTop="253.125dp"
-        android:layout_marginLeft="355dp"
-        app:srcCompat="@drawable/minus" />
+            <ImageView
+                android:id="@+id/iv_mj3_minus1"
+                android:layout_width="18dp"
+                android:layout_height="2.25dp"
+                android:layout_marginTop="253.125dp"
+                android:layout_marginLeft="355dp"
+                app:srcCompat="@drawable/minus" />
 
-    <TextView
-        android:id="@+id/tv_mj3_weight"
-        android:layout_width="50.625dp"
-        android:layout_height="22.5dp"
-        android:layout_marginTop="298.125dp"
-        android:layout_marginLeft="62dp"
-        android:textSize="16.875sp"
-        android:textColor="#0089FE"
-        android:textStyle="bold"
-        android:text="몸무게" />
+            <TextView
+                android:id="@+id/tv_mj3_weight"
+                android:layout_width="50.625dp"
+                android:layout_height="22.5dp"
+                android:layout_marginTop="298.125dp"
+                android:layout_marginLeft="62dp"
+                android:textSize="16.875sp"
+                android:textColor="#0089FE"
+                android:textStyle="bold"
+                android:text="몸무게" />
 
-    <EditText
-        android:id="@+id/et_mj3_weight"
-        android:layout_width="216dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="325.125dp"
-        android:layout_marginLeft="41dp"
-        android:background="@drawable/border"
-        android:hint="170 cm"
-        android:paddingLeft="22.5dp"
-        android:textColor="#2699FB"
-        android:textColorHint="#2699FB" />
+            <EditText
+                android:id="@+id/et_mj3_weight"
+                android:layout_width="216dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="325.125dp"
+                android:layout_marginLeft="41dp"
+                android:background="@drawable/border"
+                android:hint="70 kg"
+                android:paddingLeft="22.5dp"
+                android:textColor="#2699FB"
+                android:textColorHint="#2699FB" />
 
-    <ImageView
-        android:id="@+id/iv_mj3_plus2"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="342dp"
-        android:layout_marginLeft="300dp"
-        app:srcCompat="@drawable/plus" />
+            <ImageView
+                android:id="@+id/iv_mj3_plus2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="342dp"
+                android:layout_marginLeft="300dp"
+                app:srcCompat="@drawable/plus" />
 
-    <ImageView
-        android:id="@+id/iv_mj3_minus2"
-        android:layout_width="18dp"
-        android:layout_height="2.25dp"
-        android:layout_marginTop="349.875dp"
-        android:layout_marginLeft="355dp"
-        app:srcCompat="@drawable/minus" />
+            <ImageView
+                android:id="@+id/iv_mj3_minus2"
+                android:layout_width="18dp"
+                android:layout_height="2.25dp"
+                android:layout_marginTop="349.875dp"
+                android:layout_marginLeft="355dp"
+                app:srcCompat="@drawable/minus" />
 
-    <TextView
-        android:id="@+id/tv_mj3_job"
-        android:layout_width="33.75dp"
-        android:layout_height="22.5dp"
-        android:layout_marginTop="394.875dp"
-        android:layout_marginLeft="62dp"
-        android:textSize="16.875sp"
-        android:textColor="#0089FE"
-        android:textStyle="bold"
-        android:text="직업" />
+            <TextView
+                android:id="@+id/tv_mj3_job"
+                android:layout_width="33.75dp"
+                android:layout_height="22.5dp"
+                android:layout_marginTop="394.875dp"
+                android:layout_marginLeft="62dp"
+                android:textSize="16.875sp"
+                android:textColor="#0089FE"
+                android:textStyle="bold"
+                android:text="직업" />
 
-    <EditText
-        android:id="@+id/et_mj3_job"
-        android:layout_width="331.875dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="421.875dp"
-        android:layout_marginLeft="41dp"
-        android:background="@drawable/border"
-        android:hint="170 cm"
-        android:paddingLeft="22.5dp"
-        android:textColor="#2699FB"
-        android:textColorHint="#2699FB" />
+            <EditText
+                android:id="@+id/et_mj3_job"
+                android:layout_width="331.875dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="421.875dp"
+                android:layout_marginLeft="41dp"
+                android:background="@drawable/border"
+                android:hint="대학생"
+                android:paddingLeft="22.5dp"
+                android:textColor="#2699FB"
+                android:textColorHint="#2699FB" />
 
-    <TextView
-        android:id="@+id/tv_mj3_age"
-        android:layout_width="127.125dp"
-        android:layout_height="22.5dp"
-        android:layout_marginTop="508.5dp"
-        android:layout_marginLeft="41dp"
-        android:textSize="16.875sp"
-        android:textColor="#0089FE"
-        android:textStyle="bold"
-        android:text="관심 연령대 설정" />
+            <ImageButton
+                android:id="@+id/btn_mj3_done"
+                android:layout_width="331.875dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="648.875dp"
+                android:layout_marginLeft="41dp"
+                android:textSize="20.25sp"
+                android:background="@drawable/mj_btn" />
 
-    <SeekBar
-        android:id="@+id/mj3_seekBar"
-        android:layout_width="331.875dp"
-        android:layout_height="38.25dp"
-        android:layout_marginTop="556.875dp"
-        android:layout_marginLeft="41dp"
-        android:max="100"/>
+            <TextView
+                android:id="@+id/tv_mj3_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="665.75dp"
+                android:text="완료"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15.75sp"/>
 
-    <ImageButton
-        android:id="@+id/btn_mj3_done"
-        android:layout_width="331.875dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="648.875dp"
-        android:layout_marginLeft="41dp"
-        android:textSize="20.25sp"
-        android:background="@drawable/mj_btn" />
+        </RelativeLayout>
 
-    <TextView
-        android:id="@+id/tv_mj3_done"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="665.75dp"
-        android:text="완료"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:textSize="15.75sp"/>
-
+    </ScrollView>
 
 </RelativeLayout>

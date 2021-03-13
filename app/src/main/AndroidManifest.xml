@@ -13,8 +13,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApaAndroid">
+        android:theme="@style/Theme.MyApaAndroid"
+        android:networkSecurityConfig="@xml/network_security_config">
         <activity android:name=".activity.ReportAddActivity"></activity>
+        <activity android:name=".activity.MemberJoinFirst" />
+        <activity android:name=".activity.MemberJoinSecond" />
+        <activity android:name=".activity.MemberJoinThird" />
         <activity android:name=".activity.CalendarActivity" />
         <activity android:name=".activity.WritepageActivity" />
         <activity android:name=".activity.CommentActivity" />

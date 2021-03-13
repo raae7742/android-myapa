@@ -1,29 +1,22 @@
 package kr.teamcadi.myapa.activity;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import java.io.InputStream;
 
@@ -56,7 +49,7 @@ public class WritepageActivity extends AppCompatActivity {
         wp_spinner = findViewById(R.id.wp_spinner);
 
         String[] medical = {"안과", "내과", "이비인후과", "소아과", "치과", "산부인과", "비뇨기과", "암", "외과", "피부과"}; // 진료과 선택 스피너에 넣을 진료과 내용
-        final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,R.layout.spinner_writepage, medical); // 진료과 선택 스피너와 내용 연결
+        final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,R.layout.spinner_text_writepage, medical); // 진료과 선택 스피너와 내용 연결
         adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item); // 스피너 스타일
         wp_spinner.setAdapter(adapter); // 스피너와 어댑터 연결
 

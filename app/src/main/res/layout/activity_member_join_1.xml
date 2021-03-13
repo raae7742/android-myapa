@@ -4,164 +4,175 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/iv_mj_backarrow"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="42.75dp"
-        android:layout_marginLeft="24.75dp"
-        app:srcCompat="@drawable/bw_arrow" />
-
-    <ImageView
-        android:id="@+id/iv_mj1_logo"
-        android:layout_width="210.375dp"
-        android:layout_height="73.125dp"
-        android:layout_marginTop="16.875dp"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/logo" />
-
-    <ImageView
-        android:id="@+id/iv_mj1_background"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="648dp"
-        android:layout_marginTop="102.375dp"
-        app:srcCompat="@drawable/bg_mj_1" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_mj1_name"
-        android:layout_width="33.75dp"
-        android:layout_height="22.5dp"
-        android:layout_marginTop="141.75dp"
-        android:layout_marginLeft="61dp"
-        android:textSize="16.875sp"
-        android:textColor="#0089FE"
-        android:textStyle="bold"
-        android:text="성명" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/et_mj1_name"
-        android:layout_width="331.875dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="168.75dp"
-        android:background="@drawable/border"
-        android:hint="홍길동"
-        android:paddingLeft="22.5dp"
-        android:textColor="#2699FB"
-        android:textColorHint="#2699FB" />
+            <ImageView
+                android:id="@+id/iv_mj_backarrow"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="42.75dp"
+                android:layout_marginLeft="24.75dp"
+                app:srcCompat="@drawable/bw_arrow" />
 
-    <TextView
-        android:id="@+id/tv_mj1_email"
-        android:layout_width="50.625dp"
-        android:layout_height="22.5dp"
-        android:layout_marginTop="238.5dp"
-        android:layout_marginLeft="61dp"
-        android:textSize="16.875sp"
-        android:textColor="#0089FE"
-        android:textStyle="bold"
-        android:text="이메일" />
+            <ImageView
+                android:id="@+id/iv_mj1_logo"
+                android:layout_width="210.375dp"
+                android:layout_height="73.125dp"
+                android:layout_marginTop="16.875dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/et_mj1_email"
-        android:layout_width="331.875dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="265.5dp"
-        android:background="@drawable/border"
-        android:hint="johndoe@mail.com"
-        android:paddingLeft="22.5dp"
-        android:textColor="#2699FB"
-        android:textColorHint="#2699FB" />
+            <ImageView
+                android:id="@+id/iv_mj1_background"
+                android:layout_width="match_parent"
+                android:layout_height="648dp"
+                android:layout_marginTop="102.375dp"
+                app:srcCompat="@drawable/bg_mj_1" />
 
-    <TextView
-        android:id="@+id/tv_mj1_id"
-        android:layout_width="50.625dp"
-        android:layout_height="22.5dp"
-        android:layout_marginTop="335.25dp"
-        android:layout_marginLeft="61dp"
-        android:textSize="16.875sp"
-        android:textColor="#0089FE"
-        android:textStyle="bold"
-        android:text="아이디" />
+            <TextView
+                android:id="@+id/tv_mj1_name"
+                android:layout_width="33.75dp"
+                android:layout_height="22.5dp"
+                android:layout_marginTop="141.75dp"
+                android:layout_marginLeft="61dp"
+                android:textSize="16.875sp"
+                android:textColor="#0089FE"
+                android:textStyle="bold"
+                android:text="성명" />
 
-    <EditText
-        android:id="@+id/et_mj1_id"
-        android:layout_width="331.875dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="362.25dp"
-        android:background="@drawable/border"
-        android:hint="happy_hong"
-        android:paddingLeft="22.5dp"
-        android:textColor="#2699FB"
-        android:textColorHint="#2699FB" />
+            <EditText
+                android:id="@+id/et_mj1_name"
+                android:layout_width="331.875dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="168.75dp"
+                android:background="@drawable/border"
+                android:hint="홍길동"
+                android:paddingLeft="22.5dp"
+                android:textColor="#2699FB"
+                android:textColorHint="#2699FB" />
 
-    <TextView
-        android:id="@+id/tv_mj1_password"
-        android:layout_width="67.5dp"
-        android:layout_height="22.5dp"
-        android:layout_marginTop="432dp"
-        android:layout_marginLeft="61dp"
-        android:textSize="16.875sp"
-        android:textColor="#0089FE"
-        android:textStyle="bold"
-        android:text="비밀번호" />
+            <TextView
+                android:id="@+id/tv_mj1_email"
+                android:layout_width="50.625dp"
+                android:layout_height="22.5dp"
+                android:layout_marginTop="238.5dp"
+                android:layout_marginLeft="61dp"
+                android:textSize="16.875sp"
+                android:textColor="#0089FE"
+                android:textStyle="bold"
+                android:text="이메일" />
 
-    <EditText
-        android:id="@+id/et_mj1_pasword"
-        android:layout_width="331.875dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="459dp"
-        android:background="@drawable/border"
-        android:inputType="textPassword"
-        android:hint="********"
-        android:paddingLeft="22.5dp"
-        android:textColor="#2699FB"
-        android:textColorHint="#2699FB" />
+            <EditText
+                android:id="@+id/et_mj1_email"
+                android:layout_width="331.875dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="265.5dp"
+                android:background="@drawable/border"
+                android:hint="johndoe@mail.com"
+                android:paddingLeft="22.5dp"
+                android:textColor="#2699FB"
+                android:textColorHint="#2699FB" />
 
-    <TextView
-        android:id="@+id/tv_mj1_nickname"
-        android:layout_width="50.625dp"
-        android:layout_height="22.5dp"
-        android:layout_marginTop="528.75dp"
-        android:layout_marginLeft="61dp"
-        android:textSize="16.875sp"
-        android:textColor="#0089FE"
-        android:textStyle="bold"
-        android:text="닉네임" />
+            <TextView
+                android:id="@+id/tv_mj1_id"
+                android:layout_width="50.625dp"
+                android:layout_height="22.5dp"
+                android:layout_marginTop="335.25dp"
+                android:layout_marginLeft="61dp"
+                android:textSize="16.875sp"
+                android:textColor="#0089FE"
+                android:textStyle="bold"
+                android:text="아이디" />
 
-    <EditText
-        android:id="@+id/et_mj1_nickname"
-        android:layout_width="331.875dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="555.75dp"
-        android:background="@drawable/border"
-        android:hint="건강7889"
-        android:paddingLeft="22.5dp"
-        android:textColor="#2699FB"
-        android:textColorHint="#2699FB" />
+            <EditText
+                android:id="@+id/et_mj1_id"
+                android:layout_width="331.875dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="362.25dp"
+                android:background="@drawable/border"
+                android:hint="happy_hong"
+                android:paddingLeft="22.5dp"
+                android:textColor="#2699FB"
+                android:textColorHint="#2699FB" />
 
-    <ImageButton
-        android:id="@+id/btn_mj1_next"
-        android:layout_width="331.875dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="648.875dp"
-        android:layout_marginLeft="41dp"
-        android:textSize="20.25sp"
-        android:background="@drawable/mj_btn" />
+            <TextView
+                android:id="@+id/tv_mj1_password"
+                android:layout_width="67.5dp"
+                android:layout_height="22.5dp"
+                android:layout_marginTop="432dp"
+                android:layout_marginLeft="61dp"
+                android:textSize="16.875sp"
+                android:textColor="#0089FE"
+                android:textStyle="bold"
+                android:text="비밀번호" />
 
-    <TextView
-        android:id="@+id/tv_mj1_next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="665.75dp"
-        android:text="다음"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:textSize="15.75sp"/>
+            <EditText
+                android:id="@+id/et_mj1_pasword"
+                android:layout_width="331.875dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="459dp"
+                android:background="@drawable/border"
+                android:inputType="textPassword"
+                android:hint="********"
+                android:paddingLeft="22.5dp"
+                android:textColor="#2699FB"
+                android:textColorHint="#2699FB" />
 
+            <TextView
+                android:id="@+id/tv_mj1_nickname"
+                android:layout_width="50.625dp"
+                android:layout_height="22.5dp"
+                android:layout_marginTop="528.75dp"
+                android:layout_marginLeft="61dp"
+                android:textSize="16.875sp"
+                android:textColor="#0089FE"
+                android:textStyle="bold"
+                android:text="닉네임" />
+
+            <EditText
+                android:id="@+id/et_mj1_nickname"
+                android:layout_width="331.875dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="555.75dp"
+                android:background="@drawable/border"
+                android:hint="건강7889"
+                android:paddingLeft="22.5dp"
+                android:textColor="#2699FB"
+                android:textColorHint="#2699FB" />
+
+            <ImageButton
+                android:id="@+id/btn_mj1_next"
+                android:layout_width="331.875dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="648.875dp"
+                android:layout_marginLeft="41dp"
+                android:textSize="20.25sp"
+                android:background="@drawable/mj_btn" />
+
+            <TextView
+                android:id="@+id/tv_mj1_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="665.75dp"
+                android:text="다음"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15.75sp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
